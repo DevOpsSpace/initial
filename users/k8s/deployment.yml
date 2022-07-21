@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: first-users-deployment
+  name: initial-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: first-users
+      app: initial
   template:
     metadata:
       labels:
-        app: first-users
+        app: initial
     spec:
       containers:
-      - name: first-users
-        image: snmmaurya/first-users:latest
+      - name: initial
+        image: snmmaurya/initial:latest
         resources:
           requests:
             cpu: 200m
