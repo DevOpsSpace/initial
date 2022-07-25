@@ -1,0 +1,3 @@
+docker build --build-arg=development -f deployment/Dockerfile -t snmmaurya/initial -m 4g .
+docker tag snmmaurya/initial snmmaurya/initial
+docker push snmmaurya/initial
